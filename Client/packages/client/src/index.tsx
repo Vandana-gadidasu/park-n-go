@@ -10,7 +10,7 @@ import "./style.scss";
 import configureStore from "./redux/store";
 import HelloWorld from "./pages/hello-world/hello-world";
 
-const LazyHome = React.lazy(() => import("./pages/home/home"));
+const LazyHome = React.lazy(() => import("./pages/homePage/homePage"));
 const LazyAbout = React.lazy(() => import("./pages/about/about"));
 
 const loadingScreen = <span className="loading">Loading</span>;
