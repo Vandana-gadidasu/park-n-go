@@ -16,7 +16,7 @@ public class ParkingLotService {
     public List<ParkingLot> getListOfParkingLotWithAreaAndName(String city, String area) throws IOException, CsvException {
         List<ParkingLot> listOfParkingLot = readCsv();
 
-        return listOfParkingLot.stream().filter(parkingLot -> parkingLot.getCity().contains(city)).toList();
+        return listOfParkingLot.stream().filter(parkingLot -> parkingLot.getCity().contains(city)).filter(parkingLot -> parkingLot.getArea().contains(area)).toList();
     }
 
     public List<ParkingLot> readCsv() throws IOException, CsvException {

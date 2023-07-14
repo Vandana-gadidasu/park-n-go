@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 import java.util.List;
@@ -21,8 +22,8 @@ public class ParkingLotController {
     @Autowired
     private ParkingLotService parkingLotService;
 
-    @GetMapping("/{city}/{area}/{time}")
-    public ResponseEntity<List<ParkingLot>> getParkingLotDetails(@PathVariable(value = "city") String city, @PathVariable(value = "area") String area, @PathVariable(value = "time") String time) throws IOException, CsvException {
+    @GetMapping("/{city}/{area}")
+    public ResponseEntity<List<ParkingLot>> getParkingLotDetails(@PathVariable(value = "city") String city, @PathVariable(value = "area") String area, @RequestParam(value = "time") String time) throws IOException, CsvException {
 
         return new ResponseEntity<>(parkingLotService.getListOfParkingLotWithAreaAndName(city,area), HttpStatus.OK);
     }
