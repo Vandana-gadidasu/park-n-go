@@ -2,7 +2,8 @@ import { Accordion, AccordionDetails, AccordionSummary, Box, Button, InputLabel,
 import SearchIcon from '@mui/icons-material/Search';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React, { useState } from 'react'
-import { getParkingLotData } from '../../api/bff/getParkingLotData';
+import { ParkingData, getParkingLotData } from '../../api/bff/getParkingLotData';
+import SearchResults from './SearchResults';
 
 const homePage = () => {
 const [city, setCity] = useState("");
@@ -12,10 +13,9 @@ const [hour, setHour] = useState<string | undefined>("hour");
 const [minutes, setMinutes] = useState<string | undefined>("minutes");
 
 const [timeFormat, setTimeFormat] = useState<string | undefined>("am/pm");
-
+const [searchResults, setSearchResults] = useState<ParkingData[]>([]);
 const getMinutes = () => new Array(60).fill(undefined).map((_, index) => (<MenuItem value={index + 1}>{index + 1}</MenuItem>
    ));
-
 
 
 const getHour = () => new Array(12).fill(undefined).map((_, index) => 
@@ -26,7 +26,7 @@ const getHour = () => new Array(12).fill(undefined).map((_, index) =>
             getParkingLotData(city, place, `${hour}:${minutes} ${timeFormat}`)
                 .then((res) => {
                     console.log(res);
-                    
+                    setSearchResults(res);
                 })
          }
          
@@ -112,6 +112,9 @@ const getHour = () => new Array(12).fill(undefined).map((_, index) =>
         </AccordionDetails>
       </Accordion>
         </Box>
+        {searchResults.length > 0 && (
+            <SearchResults results={searchResults}/>
+        )}
     </Box>
   )
 }

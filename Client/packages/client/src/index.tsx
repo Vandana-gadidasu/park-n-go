@@ -23,12 +23,12 @@ export default function App() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/hello-world">Hello World</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 
