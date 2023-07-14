@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should have the text in header component 1`] = `
+<DocumentFragment>
+  <h1
+    class="dummy-class"
+  >
+    Test Label
+  </h1>
+</DocumentFragment>
+`;

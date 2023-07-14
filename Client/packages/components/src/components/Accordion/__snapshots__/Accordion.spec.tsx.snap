@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion should have the content 1`] = `
+<DocumentFragment>
+  <div
+    class="Accordion"
+  >
+    <div
+      class="Accordion-item"
+    >
+      <div
+        class="Accordion-title"
+      >
+        <div>
+          section 1
+        </div>
+        <div>
+          -
+        </div>
+      </div>
+      <div
+        class="Accordion-content"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

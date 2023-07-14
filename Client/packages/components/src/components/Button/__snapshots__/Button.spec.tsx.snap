@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Componentt Verifies the onclick 1`] = `
+<DocumentFragment>
+  <div
+    class="btn dummy-class"
+  >
+    Test Label
+  </div>
+</DocumentFragment>
+`;

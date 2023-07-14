@@ -1,0 +1,41 @@
+.carousel {
+  position: relative;
+  top: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 3%;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+}
+
+.circle {
+  align-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 70px;
+  border-radius: 70px;
+  border-radius: 70px;
+  cursor: pointer;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  width: 70px;
+}
+
+.circle:hover {
+  opacity: 1;
+}
+
+.text {
+  align-content: center;
+  height: 50px;
+  left: 15%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 50px;
+}

@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app
+spec:
+  selector:
+    matchLabels:
+      run: react-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: react-app
+    spec:
+      containers:
+        - name: react-app
+          image: <your react-starter image name>
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app
+  labels:
+    run: react-app
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+  selector:
+    run: react-app
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-react-app
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - host: "react.catalyst.com"
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: react-app
+                port:
+                  number: 80

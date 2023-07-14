@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page Verifies the snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="home-page"
+  >
+    <h1
+      class="home-header"
+    >
+      Welcome to my Home Page
+    </h1>
+    <div
+      class="counter"
+    >
+      <div
+        class="counter-label"
+      >
+         Count: 0
+      </div>
+      <div
+        class="counter-btn-container"
+      >
+        <div
+          class="btn primary increment"
+        >
+          Increase Count
+        </div>
+        <div
+          class="btn primary decrement"
+        >
+          Decrease Count
+        </div>
+        <div
+          class="btn secondary reset"
+        >
+          Reset
+        </div>
+      </div>
+    </div>
+    <h2>
+      Example application
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <div>
+      <div
+        class="accordion"
+      >
+        <div
+          class="accordion-item"
+        >
+          <div
+            class="accordion-title"
+          >
+            <div>
+              section 1
+            </div>
+            <div>
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="accordion"
+      >
+        <div
+          class="accordion-item"
+        >
+          <div
+            class="accordion-title"
+          >
+            <div>
+              section 2
+            </div>
+            <div>
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="accordion"
+      >
+        <div
+          class="accordion-item"
+        >
+          <div
+            class="accordion-title"
+          >
+            <div>
+              section 3
+            </div>
+            <div>
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div
+              class="carousel"
+            >
+              <div
+                class="carousel-image"
+              >
+                <img
+                  alt=""
+                  id="image-1"
+                  src="test-file-stub"
+                  style="width: 100%; height: 400px;"
+                />
+              </div>
+              <div
+                class="carousel-controls"
+              >
+                <div
+                  class="circle"
+                >
+                  <div
+                    class="text"
+                  >
+                    prev
+                  </div>
+                </div>
+                <div
+                  class="circle"
+                >
+                  <div
+                    class="text"
+                  >
+                    next
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

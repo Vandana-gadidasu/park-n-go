@@ -1,0 +1,13 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "E2E testing package",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "cypress run"
+  },
+  "dependencies": {
+    "cypress": "^8.6.0"
+  }
+}

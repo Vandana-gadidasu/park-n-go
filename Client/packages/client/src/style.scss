@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  overflow: auto;
+}
+
+header,
+main,
+nav,
+footer {
+  display: grid;
+  grid-auto-rows: minmax(auto);
+  grid-column-gap: 32px;
+  grid-template-columns:
+    [screen-start] 1fr
+    [page-start] 60px 60px
+    [text-start] 60px 60px 60px 60px
+    60px 60px 60px 60px
+    [text-end] 60px 60px
+    [page-end] 1fr [screen-end];
+}
+
+header > *,
+main > *,
+nav > *,
+footer > * {
+  grid-column: text;
+}
+
+.loading {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  border-bottom: 1px solid $border-color;
+
+  ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    overflow: auto;
+  }
+
+  li {
+    padding: 20px;
+  }
+}

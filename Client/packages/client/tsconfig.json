@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "./src/types"
+  },
+  "include": ["./src/**/*", "babel.config.js"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+    "typeAcquisition": {
+      "include": [
+        "jest"
+      ]
+    }
+}

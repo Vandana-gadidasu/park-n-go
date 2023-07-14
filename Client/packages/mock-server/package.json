@@ -1,0 +1,15 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "devDependencies": {
+    "mountebank": "2.7.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
