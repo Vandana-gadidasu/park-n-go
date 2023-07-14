@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class BookingService {
-    private static final String CSV_FILE_PATH = "./backend-service/src/main/resources/static/booking.csv";
+    private static final String CSV_FILE_PATH = "src/main/resources/static/booking.csv";
     public void saveBookingToCSV(String bookingId, String parkingName, String userId) {
         try (FileWriter writer = new FileWriter(CSV_FILE_PATH, true)) {
             // Append the booking information to the CSV file
